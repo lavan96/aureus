@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <title>Aureus</title>
+  </head>
+
+  <style>
+    .carousel-item{
+        height:auto;
+    }
+    nav{
+      background-color: #231F20;
+      font-weight:600;
+    }
+    .nav-item{
+      margin-left: auto;
+      padding-left: 50px;
+
+    }
+
+    #home{
+      padding-left: 50px;
+    }
+    a{
+      color: rgba(213,194,97,1);
+color: linear-gradient(90deg, rgba(163,136,49,1) 0%, rgba(178,147,62,1) 35%, rgba(248,239,174,1) 66%, rgba(248,239,174,1) 79%, rgba(231,217,129,1) 91%, rgba(213,194,97,1) 100%);
+      text-decoration: none;
+      font-family: 'Cormorant SC', serif;
+    }
+    a:hover{
+        color: rgba(213,194,97,1);
+color: linear-gradient(90deg, rgba(163,136,49,1) 0%, rgba(178,147,62,1) 35%, rgba(248,239,174,1) 66%, rgba(248,239,174,1) 79%, rgba(231,217,129,1) 91%, rgba(213,194,97,1) 100%);
+      text-decoration: underline;
+    }
+    #navtoggle{
+      color:#231F20;
+    }
+    .container{
+      padding:30px;
+      background-color: #231F20;
+    }
+    
+    h1{
+        font-family: 'Cormorant SC', serif;
+      font-weight: 600;
+      color: rgba(213,194,97,1);
+color: linear-gradient(90deg, rgba(163,136,49,1) 0%, rgba(178,147,62,1) 35%, rgba(248,239,174,1) 66%, rgba(248,239,174,1) 79%, rgba(231,217,129,1) 91%, rgba(213,194,97,1) 100%);
+      font-size: 50px;
+      padding-bottom:10px;
+      padding-top:10px;
+
+    }
+    body{
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Playfair Display', serif;
+      color: rgba(213,194,97,1);
+color: linear-gradient(90deg, rgba(163,136,49,1) 0%, rgba(178,147,62,1) 35%, rgba(248,239,174,1) 66%, rgba(248,239,174,1) 79%, rgba(231,217,129,1) 91%, rgba(213,194,97,1) 100%);
+      background-color: #231F20;
+    }
+
+    h4{
+      font-size: 25px;
+      font-weight: 600;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      padding-right: 15px;
+    }
+
+    
+
+     .footer{
+      background-color:#231F20;
+      color: rgba(213,194,97,1);
+color: linear-gradient(90deg, rgba(163,136,49,1) 0%, rgba(178,147,62,1) 35%, rgba(248,239,174,1) 66%, rgba(248,239,174,1) 79%, rgba(231,217,129,1) 91%, rgba(213,194,97,1) 100%);
+      font-family: 'Hammersmith One', sans-serif;
+      padding:30px;
+      
+     }
+
+     .footertext{
+       font-size: 15px;
+       font-family: 'Playfair Display', serif;
+       
+     }
+
+     .logo{
+         width:200px;
+     }
+     p{
+      font-family: 'Roboto', sans-serif;
+     }
+     p{
+      font-family: 'Playfair Display', serif;
+     }
+     .carousel-caption{
+       bottom:250px;
+     }
+     .carousel-text{
+      font-size: 100px;
+     }
+     h2{
+      
+      
+     }
+     .btn{
+        background: rgba(213,194,97,1);
+text-transform: uppercase;
+color:#231F20;
+border-radius: 0px;
+font-weight:800;
+width:200px;
+height:50px;
+margin-top: 40px;
+     }
+     .btn:hover{
+      background: rgba(163,136,49,1);
+     }
+     #firstrow{
+        margin-top:20px;
+        padding: 50px 0 50px 20px;
+        border: 3.5px solid #072e5c;
+         
+;
+    }
+    
+     .card-title{
+       color:#072e5c;
+       font-weight: 600;
+     }
+     #row{
+       margin-top: 50px;
+     }
+     ul{
+        list-style-type: none;
+        margin-left: -25px;
+     }
+     .date{
+         font-weight: 600;
+         text-transform: uppercase;
+         font-size: 20px;
+     }
+     .color{
+         color: #072e5c;
+         font-family: 'Playfair Display', serif;
+     }
+     .document{
+         margin-top: -20px;
+     }
+     h3{
+       font-size: 30px;
+     }
+     header{
+        background: rgb(163,136,49);
+background: linear-gradient(90deg, rgba(163,136,49,1) 0%, rgba(178,147,62,1) 35%, rgba(248,239,174,1) 66%, rgba(248,239,174,1) 79%, rgba(231,217,129,1) 91%, rgba(213,194,97,1) 100%);
+       
+       
+       background-repeat: no-repeat;
+       background-position: center center;
+       -webkit-background-size: cover ;
+       background-size: cover;
+       width:100%;
+       height: 50vh;
+       display: -webkit-flex;
+       display: -moz-flex;
+       display:-ms-flex;
+       display: -o-flex;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-flow: column;
+       
+       
+
+     }
+
+     #header{
+        color: #231F20;
+       text-align: center;
+       margin: 40px;
+       font-size: 40px;
+       text-transform: capitalize;
+     }
+
+     
+
+     #home-body{
+       background: url(home-body.jpg);
+       filter: grayscale();
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       
+     }
+
+     
+
+     
+
+    
+     
+     @media screen and (max-width: 768px) {
+      .carousel-item{
+        height:auto;
+    }
+    .nav-link{
+      margin-left: 10px;
+      color: rgb(163,136,49);
+color: linear-gradient(90deg, rgba(163,136,49,1) 0%, rgba(178,147,62,1) 35%, rgba(248,239,174,1) 66%, rgba(248,239,174,1) 79%, rgba(231,217,129,1) 91%, rgba(213,194,97,1) 100%);
+    }
+    .nav-link:hover{
+      margin-left: 10px;
+      color: rgb(163,136,49);
+color: linear-gradient(90deg, rgba(163,136,49,1) 0%, rgba(178,147,62,1) 35%, rgba(248,239,174,1) 66%, rgba(248,239,174,1) 79%, rgba(231,217,129,1) 91%, rgba(213,194,97,1) 100%);
+    }
+    .dropdown-menu{
+      background-color: white;
+      color: rgb(163,136,49);
+color: linear-gradient(90deg, rgba(163,136,49,1) 0%, rgba(178,147,62,1) 35%, rgba(248,239,174,1) 66%, rgba(248,239,174,1) 79%, rgba(231,217,129,1) 91%, rgba(213,194,97,1) 100%);
+text-align: right;
+
+    }
+    .dropdown-item{
+        color: rgb(163,136,49);
+color: linear-gradient(90deg, rgba(163,136,49,1) 0%, rgba(178,147,62,1) 35%, rgba(248,239,174,1) 66%, rgba(248,239,174,1) 79%, rgba(231,217,129,1) 91%, rgba(213,194,97,1) 100%);
+
+    }
+    .dropdown-item:hover{
+        color: rgb(163,136,49);
+color: linear-gradient(90deg, rgba(163,136,49,1) 0%, rgba(178,147,62,1) 35%, rgba(248,239,174,1) 66%, rgba(248,239,174,1) 79%, rgba(231,217,129,1) 91%, rgba(213,194,97,1) 100%);
+      background-color: transparent;
+
+    }
+    nav{
+      background-color: #231F20;
+margin:0px;
+    }
+    li{
+      color:white;
+    }
+    .navbar-brand{
+     margin-right: auto;
+    
+
+    }
+
+    #home{
+      padding-left: 0px;
+      margin-top: 30px;
+    }
+    span{
+      background-image: url(navbar-2.png);
+    }
+    #mobile{
+      display: none;
+      
+      
+      
+    }
+    #web{
+      display:url(aureus.png);
+      width: 200px;
+      background-repeat: none;
+      background-position: center;
+      margin-left: 0px;
+    }
+
+    h1{
+        font-size:35px;
+    }
+    h2{
+        font-size:20px;
+    }
+    #mobilepadding{
+         padding-top: 100px;
+     }
+     #firstrow{
+       padding-left:50px;
+     }
+     footer{
+       text-align: center;
+     }
+     .banner{
+       
+       background-size: contain;
+       width: 500px;
+       height:500px;
+
+     }
+     #header{
+       font-size: 30px;
+     }
+     }
+
+     @media screen and (min-width: 769px){
+      #web{
+      display:url(aureus.png);
+      width: 200px;
+      background-repeat: none;
+      background-position: center;
+      
+      
+    }
+    #mobile{
+      display:none;
+     }
+     .navbar-brand{
+     margin-right: auto;
+    
+
+    }
+    li.nav-item:hover ul.dropdown-menu{
+      display:block;
+
+    }
+    
+    #firstrow{
+      width:400px;
+      height: 200px;
+      margin: 10px;
+      padding-left: 50px;
+      
+      
+    }
+    .card-title{
+      font-size: 30px;
+      padding-top: 25px;
+      margin-right: 70px;
+
+    }
+    #home-body-2{
+      padding: 0 50px 0 50px;"
+    }
+    .row{
+      margin-top: 50px;
+    }
+     }
+     
+  </style>
+  <body>
+    
+
+    
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="aureus.png" alt="" id="web"></a>
+        <a class="navbar-brand" href="index.html"><img src="aureus.png" alt="" id="mobile"></a>
+        
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto pb-2 pb-lg-0  ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about-us.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="overlay">
+<header>
+<h1 id="header">Accelerating the fuel energy transition in Asia Pacific towards better future</h1>
+</header>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" id="home-body"></div>
+    <div class="col-sm-8" id="home-body-2">
+      <h1 >Powering Energy Transition for Cleaner Future</h1>
+  <p style="font-family: 'Roboto', serif;">Energy transition is a significant structural change in an energy system. Historically,
+    these changes have been driven by the demand for and availability of different fuels.
+    The energy transition is a pathway toward transformation of the global energy sector
+    from high carbon fossil-based to low-carbon fuel. At its heart is the need to
+    reduce energy-related CO2 emissions to limit climate change. Regulation and
+    commitment to decarbonization has been mixed, but the energy transition will continue to
+    increase in importance as investors prioritize environmental, social and governance (ESG)
+    factors. </p>
+  <p style="font-family: 'Roboto', serif;">Natural gas, and especially LNG, is expected to play a critical role in energy
+    transition over the next 20-30 years, including supplying energy to the fast
+    growing markets in the Asia Pacific region. The increased use of natural gas has
+    already contributed to the reduction in CO2 emissions and the improvement in local
+    air quality in many countries around the world, and will continue to do so as it
+    replaces coal in electricity generation and diesel as a transportation fuel. Natural
+    gas is also a key complement to renewable power development because it can
+    quickly compensate for decreases in solar or wind power supply and rapidly
+    respond to increases in demand, thus serving as a critical backstop to insure the
+    stable uninterrupted delivery of electricity. Finally, natural gas is also the key
+    feedstock for “blue” hydrogen, a low-carbon method of producing hydrogen. </p>
+  <p style="font-family: 'Roboto', serif;">We believe there is a natural gas market opportunity to execute an integrated
+    natural gas and LNG supply chain strategy because of a disconnect between
+    natural gas upstream suppliers and downstream consumers, especially
+    international power producers in fast growing Asia Pacific economies that are
+    faced with an increase in demand for electricity, a decline in domestic natural
+    gas production and government policies supporting the development of gasfired power generation to replace coal or oil fired plants. In addition, these
+    economies are grappling with rising natural gas demand growth from industrial
+    consumers as a result of fuel switching and rapid economic growth. Switching
+    from coal to natural gas was the largest single contributor to global consumption
+    growth in 2019, accounting for over 55 bcm of additional demand. </p>
+  <a href="about-us.html" style="color:white;"><button type="submit" class="btn btn-primary">Learn more</button></a>
+    </div>
+  
+</div>
+  
+    <div>      
+      <footer class="footer pt-5 pb-5"  id="footer">
+      <div id="footer">
+      <div class="row">
+        <div class="col-md-2" style="margin-top: 20px;">
+          <img src="aureus-01.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-2" id="mobilepadding">
+          <h4><a href="index.html" id="home">Home</a></h4>
+        </div>
+        
+        <div class="col-md-2">
+          <h4><a href="about-us.html">About Us</a></h4>
+          
+        </div>
+        
+        <div class="col-md-2">
+          <h4><a href="contact.html">Contact</a></h4>
+          <p>
+            <span class="my-icon"><i class="fab fa-facebook-square"></i></span><span class="my-icon"><i class="fab fa-instagram"></i></span><span class="my-icon"><i class="fab fa-twitter-square"></i></i></span>
+          </p>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+    <script>
+
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="plugins/dyClockJS-2.0.2/dyClockJS-2.0.2/dist/js/dyclock.min.js"></script>
+    <script src="plugins/dyClockJS-2.0.2/dyClockJS-2.0.2/src/js/default.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
